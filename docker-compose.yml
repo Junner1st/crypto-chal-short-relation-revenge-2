@@ -1,0 +1,9 @@
+services:
+  app:
+    build: .
+    container_name: token-service-3
+    ports:
+      - "1343:5000"
+    environment:
+      FLAG: "CCCTF{W31ghtEd_CVP_0VEr_4_r3Iation_is_WaY_FaahhNier_Th4N_i_th0ughT}"
+    restart: unless-stopped
